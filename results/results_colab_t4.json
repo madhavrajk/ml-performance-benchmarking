@@ -1,0 +1,51 @@
+{
+  "env_label": "colab_t4",
+  "hardware": {
+    "gpu_name": "Tesla T4",
+    "gpu_memory_GB": 14.6,
+    "cuda_version": "12.8",
+    "torch_version": "2.10.0+cu128"
+  },
+  "batch_size": 32,
+  "models": {
+    "ResNet18": {
+      "model": "ResNet18",
+      "param_count": 11689512,
+      "param_MB": 44.59,
+      "flops_per_sample": 1820000000,
+      "latency_mean_ms": 28.888,
+      "latency_std_ms": 2.677,
+      "throughput_samples_sec": 1107.7,
+      "gpu_memory_allocated_MB": 699.21,
+      "bandwidth_bytes": 94118208,
+      "arithmetic_intensity": 19.3374,
+      "attainable_gflops": 63.0
+    },
+    "ResNet50": {
+      "model": "ResNet50",
+      "param_count": 25557032,
+      "param_MB": 97.49,
+      "flops_per_sample": 4100000000,
+      "latency_mean_ms": 94.446,
+      "latency_std_ms": 0.659,
+      "throughput_samples_sec": 338.8,
+      "gpu_memory_allocated_MB": 699.21,
+      "bandwidth_bytes": 205058368,
+      "arithmetic_intensity": 19.9943,
+      "attainable_gflops": 43.41
+    },
+    "VGG16": {
+      "model": "VGG16",
+      "param_count": 138357544,
+      "param_MB": 527.79,
+      "flops_per_sample": 15500000000,
+      "latency_mean_ms": 162.075,
+      "latency_std_ms": 0.917,
+      "throughput_samples_sec": 197.4,
+      "gpu_memory_allocated_MB": 699.21,
+      "bandwidth_bytes": 1107462464,
+      "arithmetic_intensity": 13.996,
+      "attainable_gflops": 95.63
+    }
+  }
+}

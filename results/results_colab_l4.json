@@ -1,0 +1,51 @@
+{
+  "env_label": "colab_l4",
+  "hardware": {
+    "gpu_name": "NVIDIA L4",
+    "gpu_memory_GB": 22.0,
+    "cuda_version": "12.8",
+    "torch_version": "2.10.0+cu128"
+  },
+  "batch_size": 32,
+  "models": {
+    "ResNet18": {
+      "model": "ResNet18",
+      "param_count": 11689512,
+      "param_MB": 44.59,
+      "flops_per_sample": 1820000000,
+      "latency_mean_ms": 9.953,
+      "latency_std_ms": 0.197,
+      "throughput_samples_sec": 3215.1,
+      "gpu_memory_allocated_MB": 700.09,
+      "bandwidth_bytes": 94118208,
+      "arithmetic_intensity": 19.3374,
+      "attainable_gflops": 182.86
+    },
+    "ResNet50": {
+      "model": "ResNet50",
+      "param_count": 25557032,
+      "param_MB": 97.49,
+      "flops_per_sample": 4100000000,
+      "latency_mean_ms": 42.502,
+      "latency_std_ms": 0.342,
+      "throughput_samples_sec": 752.9,
+      "gpu_memory_allocated_MB": 700.09,
+      "bandwidth_bytes": 205058368,
+      "arithmetic_intensity": 19.9943,
+      "attainable_gflops": 96.47
+    },
+    "VGG16": {
+      "model": "VGG16",
+      "param_count": 138357544,
+      "param_MB": 527.79,
+      "flops_per_sample": 15500000000,
+      "latency_mean_ms": 77.811,
+      "latency_std_ms": 0.99,
+      "throughput_samples_sec": 411.3,
+      "gpu_memory_allocated_MB": 700.09,
+      "bandwidth_bytes": 1107462464,
+      "arithmetic_intensity": 13.996,
+      "attainable_gflops": 199.2
+    }
+  }
+}

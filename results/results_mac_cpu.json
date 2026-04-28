@@ -1,0 +1,51 @@
+{
+  "env_label": "mac_cpu",
+  "hardware": {
+    "gpu_name": "N/A",
+    "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "torch_version": "2.11.0"
+  },
+  "batch_size": 32,
+  "models": {
+    "ResNet18": {
+      "model": "ResNet18",
+      "param_count": 11689512,
+      "param_MB": 44.59,
+      "flops_per_sample": 1820000000,
+      "latency_mean_ms": 935.854,
+      "latency_std_ms": 64.35,
+      "throughput_samples_sec": 34.2,
+      "gpu_memory_allocated_MB": 0,
+      "bandwidth_bytes": 94118208,
+      "arithmetic_intensity": 19.3374,
+      "attainable_gflops": 1.94
+    },
+    "ResNet50": {
+      "model": "ResNet50",
+      "param_count": 25557032,
+      "param_MB": 97.49,
+      "flops_per_sample": 4100000000,
+      "latency_mean_ms": 3630.119,
+      "latency_std_ms": 128.656,
+      "throughput_samples_sec": 8.8,
+      "gpu_memory_allocated_MB": 0,
+      "bandwidth_bytes": 205058368,
+      "arithmetic_intensity": 19.9943,
+      "attainable_gflops": 1.13
+    },
+    "VGG16": {
+      "model": "VGG16",
+      "param_count": 138357544,
+      "param_MB": 527.79,
+      "flops_per_sample": 15500000000,
+      "latency_mean_ms": 2913.137,
+      "latency_std_ms": 231.422,
+      "throughput_samples_sec": 11.0,
+      "gpu_memory_allocated_MB": 0,
+      "bandwidth_bytes": 1107462464,
+      "arithmetic_intensity": 13.996,
+      "attainable_gflops": 5.32
+    }
+  }
+}
